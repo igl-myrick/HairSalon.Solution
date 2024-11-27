@@ -23,6 +23,9 @@ else
   </ul>
 }
 
+<p>@Html.ActionLink("Add a new client", "Create", "Clients")</p>
+<p>@Html.ActionLink("See all clients", "Index", "Clients")</p>
+<hr>
 <p>@Html.ActionLink("Edit stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete stylist", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to stylist listing", "Index")</p>
