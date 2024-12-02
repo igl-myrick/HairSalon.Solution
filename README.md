@@ -23,23 +23,25 @@ _1: Clone the repository to a folder of choice on your machine (by either using 
 
 _2: Using a terminal application such as Git Bash or Windows Command Prompt, navigate to the top level of the program folder, then into the `HairSalon` folder._
 
-_3: Next, run `dotnet build` in the command line to build the program._
-
-_4: Once the program is built, run `dotnet run` to start the program._
-
-_5: When the program is running, navigate to `https://localhost:5001` to view and use the website._
-
-* _Additionally, you will need to create an `appsettings.json` file within the `HairSalon` folder, including the following code:_
+_3: You will need to create an `appsettings.json` file within the `HairSalon` folder, including the following code:_
 
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=india_lyon-myrick;uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
 
-_You will need to insert your own MySQL username in place of `[YOUR-USER-HERE]`, MySQL password in place of `[YOUR-PASSWORD-HERE]`, and the name of your database in place of `[YOUR-DB-NAME]`._
+_Insert your own MySQL username in place of `[YOUR-USER-HERE]` and MySQL password in place of `[YOUR-PASSWORD-HERE]`._
+
+_4: In MySQL Workbench, open the Administration tab and select "Data Import". Select the "Import from Self-Contained File" option and navigate to the .sql database file in the `HairSalon.Solution` folder in the file select screen. Click on the "New" button in the "Default Schema to be Imported To" section. Enter the name of the database file. Finally, click "Start Import" to import the database into MySQL Workbench._
+
+_5: Next, run `dotnet build` in the command line to build the program._
+
+_6: Once the program is built, run `dotnet run` to start the program._
+
+_7: When the program is running, navigate to `https://localhost:5001` to view and use the website._
 
 ## Known Bugs
 
